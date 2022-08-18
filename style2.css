@@ -1,0 +1,87 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111;
+
+    font-size: 1.6rem; /* 16px */
+}
+
+.outer-switcher {
+    width: 25.6rem;
+    height: 12.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+    border-radius: 6rem;
+}
+
+.theme-switcher {
+    position: relative;
+
+    width: 23.6rem;
+    height: 10.2rem;
+
+    background: #111;
+
+    padding: .5rem .5rem;
+    border-radius: 5rem;
+}
+
+#switch-theme {
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 700ms;
+}
+
+#switch-theme svg circle {
+    fill: #ff00e0;
+    transition: all 0.5s ease;
+}
+
+.container.active .outer-switcher {
+    animation: rotate 1.5s linear infinite;
+}
+
+.container.active #switch-theme {
+    transform: translateX(13.4rem);
+    transition: transform 700ms;
+}
+
+.container.active #switch-theme svg circle {
+    fill: #14ffe9;
+    transition: all 0.5s ease;
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
