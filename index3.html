@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <p id="result"></p>
+            </div>
+
+            <div class="buttons">
+                <button id="letter-c" onclick="clean()">C</button>
+                <button id="less-than" onclick="back()">&lt</button>
+                <button id="division" onclick="insert('/')">/</button>
+                <button id="multiplication" onclick="insert('*')">*</button>
+
+                <button id="seven" onclick="insert('7')">7</button>
+                <button id="eight" onclick="insert('8')">8</button>
+                <button id="nine" onclick="insert('9')">9</button>
+                <button id="minus" onclick="insert('-')">-</button>
+
+                <button id="four" onclick="insert('4')">4</button>
+                <button id="five" onclick="insert('5')">5</button>
+                <button id="six" onclick="insert('6')">6</button>
+                <button id="sum" onclick="insert('+')">+</button>
+
+                <button id="one" onclick="insert('1')">1</button>
+                <button id="two" onclick="insert('2')">2</button>
+                <button id="three" onclick="insert('3')">3</button>
+                <button id="equal" onclick="calculate()">=</button>
+
+                <button id="number-0" onclick="insert('0')">0</button>
+                <button id="point" onclick="insert('.')">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts3.js"></script>
+</body>
+</html>

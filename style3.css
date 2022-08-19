@@ -1,0 +1,148 @@
+:root {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    height: 100vh;
+    
+    background-image: linear-gradient(45deg, black, crimson);
+    color: #fff;
+
+    text-align: center;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* o vértice da div calculator estava no centro da div container
+    ajustando o centro da div calculator ao centro da div container */
+    
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+
+    width: 26.6rem;
+}
+
+#result {
+    width: 22.6rem;
+    height: 5rem;
+    
+    margin: .5rem;
+    padding: .5rem;
+    
+    font-size: 2.5rem;
+    text-align: right;
+    
+    background-color: white;
+    color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: "letter-c less-than division multiplication"
+    "seven eight nine minus"
+    "four five six sum"
+    "one two three equal"
+    "number-0 number-0 point equal";
+}
+
+button {
+    min-width: 5rem;
+    min-height: 5rem;
+
+    font-size: 2.5rem;
+    margin: .3rem;
+    
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#letter-c {
+    grid-area: letter-c;
+}
+
+#less-than {
+    grid-area: less-than;
+}
+
+#division {
+    grid-area: division;
+}
+
+#multiplication {
+    grid-area: multiplication;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#sum {
+    grid-area: sum;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#number-0 {
+    grid-area: number-0;
+}
