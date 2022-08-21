@@ -9,10 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
-
-    overflow: hidden;
 }
 
 button {
@@ -41,14 +38,11 @@ button {
     border-radius: 2rem;
 
     position: relative;
-    object-fit: contain;
 }
 
 .btn {
     width: 12rem;
     height: 12rem;
-
-    margin: auto;
 
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(1rem);
@@ -130,9 +124,9 @@ button {
 
 @keyframes animateBubble { 
     0% { 
-        transform: translate(0px, 0px);
+        transform: translate(0rem, 0rem);
     }
     100% { 
-        transform: translate(50px, 50px);
+        transform: translate(5rem, 5rem);
     }
 }
