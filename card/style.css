@@ -65,7 +65,7 @@ button {
     transition: transform 700ms;
 }
 
-#background-wrap {
+#bubbles {
     width: 85rem;
     height: 60rem;
 	position: absolute;
