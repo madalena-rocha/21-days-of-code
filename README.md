@@ -18,3 +18,4 @@ Desafio #21diasdecodigo:
 - Dia 03: Criar um botão animado;
 - Dia 04: Criar uma calculadora;
 - Dia 05: Desenvolver uma página customizada que exiba o erro 404;
+- Dia 06: Criar um card com o efeito glassmorphism;
