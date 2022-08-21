@@ -1,0 +1,78 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem; /* 16px */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*background-color: #131313;*/
+
+    position: relative;
+}
+
+#orion-nebula {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 11.2rem;
+    line-height: 9.4rem;
+
+    color: #8257E5;
+
+    margin-bottom: 1.6rem;
+
+    text-shadow: 1rem 0 0 #AD7CE3;
+    letter-spacing: 1rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    
+    color: #E1E1E6;
+
+    margin-bottom: 4.8rem;
+}
+
+.button {
+    background-color: #8257E5;
+    color: #E1E1E6;
+
+    border-radius: .5rem;
+    padding: 1.6rem;
+    
+    width: 18rem;
+    text-align: center;
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #7B57B8;
+}

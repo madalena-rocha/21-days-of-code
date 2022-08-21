@@ -17,3 +17,4 @@ Desafio #21diasdecodigo:
 - Dia 02: Fazer um Hello World customizado com fontes, cores e imagens;
 - Dia 03: Criar um botão animado;
 - Dia 04: Criar uma calculadora;
+- Dia 05: Desenvolver uma página customizada que exiba o erro 404;
