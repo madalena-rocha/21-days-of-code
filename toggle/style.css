@@ -1,0 +1,68 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark);
+    transition: all 0.5s ease;
+}
+
+.theme-switcher {
+    position: relative;
+
+    width: 23.6rem;
+    height: 10.2rem;
+
+    background-color: var(--label);
+
+    padding: .5rem .5rem;
+    border-radius: 5rem;
+}
+
+#switch-theme {
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 500ms;
+}
+
+#switch-theme img {
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+#switch-theme:hover {
+    filter: brightness(1.1);
+}
+
+.container.active {
+    background-color: var(--light);
+    transition: all 0.5s ease;
+}
+
+.container.active #switch-theme {
+    transform: translateX(13.4rem);
+    transition: transform 500ms;
+}

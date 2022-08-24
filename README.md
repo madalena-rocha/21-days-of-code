@@ -20,3 +20,4 @@ Desafio #21diasdecodigo:
 - Dia 05: Desenvolver uma página customizada que exiba o erro 404;
 - Dia 06: Criar um card com o efeito glassmorphism;
 - Dia 07: Desenvolver um contador;
+- Dia 08: Desenvolver um toggle que altere o tema para claro e escuro;
