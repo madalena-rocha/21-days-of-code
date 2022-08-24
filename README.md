@@ -21,3 +21,4 @@ Desafio #21diasdecodigo:
 - Dia 06: Criar um card com o efeito glassmorphism;
 - Dia 07: Desenvolver um contador;
 - Dia 08: Desenvolver um toggle que altere o tema para claro e escuro;
+- Dia 09: Criar uma animação de loading;
