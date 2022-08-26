@@ -22,3 +22,4 @@ Desafio #21diasdecodigo:
 - Dia 07: Desenvolver um contador;
 - Dia 08: Desenvolver um toggle que altere o tema para claro e escuro;
 - Dia 09: Criar uma animação de loading;
+- Dia 10: Utilizar a lib Particles.js do JavaScript;
