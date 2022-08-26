@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de login</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <form id="my-form" action="">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Login</legend>
+
+                    <div class="mandatory-wrapper">
+                        <div class="input-wrapper">
+                            <label for="user-email">E-mail</label>
+                            <input type="email" id="user-email" placeholder="Digite seu e-mail" required />
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="user-password">Senha</label>
+                            <input type="password" id="user-password" placeholder="Digite sua senha" required minlength="6" />
+                        </div>
+                    </div>
+
+                    <div class="optional-wrapper">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="remember-access" />
+                            <label for="remember-access">Lembrar acesso</label>
+                        </div>
+                            
+                        <div class="hyperlink-wrapper">
+                            <a href="#">Esqueci a senha</a>
+                        </div>
+                    </div>
+                    
+                    <button class="button" form="my-form">Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

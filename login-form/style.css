@@ -1,0 +1,151 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+.page {
+    width: 55rem;
+    margin: auto;
+}
+
+form {
+    margin-top: 5.8rem;
+    padding: 6.4rem;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    color: #535971;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: .8rem;
+    margin-bottom: 1.6rem;
+}
+
+.mandatory-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label,
+.hyperlink-wrapper a {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    
+    color: #4E4958;
+    margin-bottom: .8rem;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    color: #6c6a71;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 5.6rem;
+    padding: 0 2.4rem;
+    line-height: 2.6rem;
+}
+
+.optional-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+
+.checkbox-wrapper,
+.hyperlink-wrapper {
+    position: relative;
+    margin-top: 1.2rem;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    opacity: 0;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {/* ao clicar no input, pegar o before do label e colocar o símbolo de checked */
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='24' height='24' rx='8' fill='%23FAFAFC' stroke='%23E6E6F0'/%3E%3Cpath d='M10 17.17L5.83 13L4.41 14.41L10 20L22 8L20.59 6.59L10 17.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:checked + label::before {
+    outline: 2px solid black; /* mostra que o campo está selecionado, importante para acessibilidade */
+}
+
+.hyperlink-wrapper a {
+    text-decoration: none;
+}
+
+.button {
+    width: 100%;
+    height: 5.6rem;
+    border: 0;
+    border-radius: 20px;
+    
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    
+    background: #535971;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
