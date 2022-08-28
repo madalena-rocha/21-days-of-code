@@ -1,0 +1,156 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Gallery */
+
+.gallery {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 90%;
+  max-height: 28vw;
+  overflow: hidden;
+}
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+  background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.gallery:after {
+  right: 0;
+  background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.gallery__stream {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(.8);
+}
+
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+
+.gallery__item:nth-child(n+5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(.8);
+}
+
+/* Controllers */
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+/* Backgrounds */
+
+.bg-1 {
+  background-image: url(./assets/img-1.png);
+}
+
+.bg-2 {
+  background-image: url(./assets/img-2.png);
+}
+
+.bg-3 {
+  background-image: url(./assets/img-3.png);
+}
+
+.bg-4 {
+  background-image: url(./assets/img-4.png);
+}
+
+.bg-5 {
+  background-image: url(./assets/img-5.png);
+}
+
+.bg-6 {
+  background-image: url(./assets/img-6.png);
+}
+
+.bg-7 {
+  background-image: url(./assets/img-7.png);
+}
+
+.bg-8 {
+  background-image: url(./assets/img-8.png);
+}
+
+.bg-9 {
+  background-image: url(./assets/img-9.png);
+}
+
+.bg-10 {
+  background-image: url(./assets/img-10.png);
+}
