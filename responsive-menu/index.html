@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <img class="logo" src="./assets/logo.svg" alt="Logo mostrando uma cruz e uma pegada de pata de cachorro ou gato.">
+                <p>VET.</p>
+            </div>
+
+            <div class="search">
+                <button class="search-button" onclick="openCloseSidebar()">
+                    <img src="./assets/search.svg" alt="Lupa">
+                </button>
+                <input type="text" placeholder="Buscar">
+            </div>
+        
+            <div class="content">
+                <a href="#">
+                    <img src="./assets/grid.svg" alt="Grid">
+                    <p>Dashboard</p>
+                </a>
+
+                <a href="#">
+                    <img src="./assets/pet.svg" alt="Pegada de pata de cachorro ou gato.">
+                    <p>Pets</p>
+                </a>
+
+                <a href="#">
+                    <img src="./assets/user.svg" alt="User">
+                    <p>Clients</p>
+                </a>
+
+                <a href="#">
+                    <img src="./assets/vet.svg" alt="User Vet">
+                    <p>Vets</p>
+                </a>
+
+                <a href="#">
+                    <img src="./assets/settings.svg" alt="Engrenagem">
+                    <p>Settings</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Dashboard</h2>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

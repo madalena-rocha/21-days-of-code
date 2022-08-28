@@ -1,0 +1,159 @@
+:root {
+    --body-bg-color: #F9F9F9;
+    --pink: #FF3366;
+    --light-pink: #F77797;
+    --text-color: #FFFFFF;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+
+    background: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 7.8rem;
+    height: 100vh;
+
+    background: var(--pink);
+
+    transition: all 0.5s ease;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    padding: 2.6rem 2.7rem;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header p,
+.content p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+
+    margin-left: 1.3rem;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search {
+    display: flex;
+
+    background: var(--light-pink);
+    border-radius: 1.2rem;
+
+    padding: 1.3rem;
+    margin: 0 1.4rem 2.1rem;
+}
+
+.search .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search input {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+
+    margin-left: 1.3rem;
+
+    background: none;
+    border: none;
+
+    opacity: 0;
+    visibility: hidden;
+        
+    color: var(--text-color);
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search input::placeholder {
+    color: var(--text-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+
+    margin-left: 2.7rem;
+}
+
+.content a {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+
+    transition: all 0.5s ease;
+}
+
+.content a:hover {
+    background-color: var(--light-pink);
+    border-radius: 1.2rem;
+
+    margin-inline: -1.4rem 1.4rem;
+    padding: 1.3rem;
+}
+
+.main {
+    padding: 1.8rem;
+}
+
+.main h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+
+    color: var(--pink);
+}
+
+/*=== OPEN SIDEBAR =====================*/
+
+@media (min-width: 600px) {
+    .sidebar {
+        width: clamp(25rem, 25vw, 35rem);
+    }
+
+    .header p,
+    .search input, 
+    .content p {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .content a:hover {
+        margin-inline: 0 1.4rem;
+    }
+}
