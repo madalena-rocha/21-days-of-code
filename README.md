@@ -27,5 +27,5 @@ Desafio #21diasdecodigo:
 - Dia 12: Desenvolver uma galeria de imagens;
 - Dia 13: Desenvolver um menu responsivo;
 - Dia 14: Criar um formulário de quizzes;
-- Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens);
-    <a href="https://github.com/madalena-rocha/rocket-shoes">Resolução do desafio</a>
+- Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens); <br>
+<a href="https://github.com/madalena-rocha/rocket-shoes">Resolução do desafio</a>
