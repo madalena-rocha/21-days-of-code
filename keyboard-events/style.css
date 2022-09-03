@@ -1,0 +1,64 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.6rem;
+    
+    background: #232741;
+    color: #E1E1E6;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 4rem;
+}
+
+.key-press {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.key-item,
+.clear-btn {
+    padding: 2rem;
+    border-radius: 1rem;
+
+    background: #E1E1E6;
+    color: #232741;
+}
+
+.clear-btn {
+    border: none;
+    cursor: pointer;
+
+    width: 10rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.clear-btn:hover {
+    background: white;
+    transition: background .5s;
+}
+
+.clear-btn.hide {
+    display: none;
+}

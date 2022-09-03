@@ -29,5 +29,7 @@ Desafio #21diasdecodigo:
 - Dia 14: Criar um formulário de quizzes;
 - Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens); <br>
 <a href="https://github.com/madalena-rocha/rocket-shoes">Resolução do desafio</a>
-- Dia 16: Desenvolva um site utilizando alguma API pública; <br>
+- Dia 16: Desenvolver um site utilizando alguma API pública; <br>
 <a href="https://github.com/madalena-rocha/rocketflix">Resolução do desafio</a>
+- Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada;
+- Dia 18: Desenvolver um gerador de senhas aleatórias;
