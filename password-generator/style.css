@@ -1,0 +1,72 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.6rem;
+    
+    background: #023047;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 4rem;
+    border-radius: 1rem;
+
+    background: #FB8500;
+}
+
+input, button {
+    border: none;
+    border-radius: 1rem;
+
+    font-size: 1.6rem;
+    color: #023047;
+}
+
+input {
+    width: 100%;
+    padding: 1.5rem;
+
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    background: #FFB703;
+    padding: 2rem;
+    
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #FCA311;
+    transition: background .5s;
+}
