@@ -70,3 +70,11 @@ button:hover {
     background: #FCA311;
     transition: background .5s;
 }
+
+span {
+    font-size: 1.2rem;
+}
+
+.hide {
+    visibility: hidden;
+}
