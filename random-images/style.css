@@ -1,0 +1,74 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #191622;
+    color: #E1E1E6;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 4rem;
+}
+
+h1 {
+    margin: 2rem auto;
+}
+
+#random-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.random-image img {
+    width: 30rem;
+    height: 30rem;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    transition: transform 400ms;
+}
+
+.random-image img:hover {
+    transform: scale(1.1);
+}
+
+#load-images {
+    background: #E1E1E6;
+    color: #191622;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    
+    border: none;
+    padding: 1rem 2rem;
+
+    cursor: pointer;
+}
+
+#load-images:hover {
+    background: white;
+    transition: background .5s;
+}
