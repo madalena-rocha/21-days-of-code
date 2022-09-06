@@ -30,7 +30,6 @@ a {
     padding: 4rem;
 
     position: absolute;
-    z-index: -1;
 
     background: linear-gradient(180deg, #232741 0%, #29292e 100%);
     color: #E1E1E6;
