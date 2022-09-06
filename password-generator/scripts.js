@@ -25,7 +25,8 @@ function generateNewPassword() {
 function copyGeneratedPassword() {
 	if(password.value) {
 		password.select()
-		document.execCommand("copy")
+		password.setSelectionRange(0, 99999)
+		navigator.clipboard.writeText(password.value)
 
 		alertMessage.innerHTML = "Senha copiada para a área de transferência!"
 	} else {

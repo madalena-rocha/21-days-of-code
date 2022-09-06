@@ -1,0 +1,46 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #402A32;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    padding: 4rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 4rem;
+    color: #FFB02E;
+}
+
+.emojis-box {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.emoji {
+    font-size: 5rem;
+    cursor: pointer;
+    font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
+}
