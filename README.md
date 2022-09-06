@@ -34,4 +34,5 @@ Desafio #21diasdecodigo:
 - Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada;
 - Dia 18: Desenvolver um gerador de senhas aleatórias;
 - Dia 19: Desenvolver um site que gere imagens aleatórias utilizando a API do Unsplash;
-- Dia 20: Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência;
+- Dia 20: Desenvolver um site de emoji picker onde, ao selecionar o emoji, ele é copiado para a área de transferência;
+- Dia 21: Desenvolver uma página para servir de portfólio, incluindo nela todos os desafios desenvolvidos durante os 21 dias.

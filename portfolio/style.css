@@ -1,0 +1,135 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #E1E1E6;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem;
+
+    position: absolute;
+    z-index: -1;
+
+    background: linear-gradient(180deg, #232741 0%, #29292e 100%);
+    color: #E1E1E6;
+}
+
+.profile {
+    margin-bottom: 2rem;
+    padding-inline: 2rem;
+    text-align: center;
+}
+
+.profile img {
+    width: 19.2rem;
+    height: 19.2rem;
+
+    border: 0.4rem solid #E1E1E6;
+    border-radius: 50%;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.profile p {
+    margin-top: 1rem;
+}
+
+.technologies {
+    margin-bottom: 2rem;
+}
+
+.technologies img {
+    width: 7rem;
+    margin-inline: .6rem;
+    transition: transform 700ms;
+}
+
+.technologies img:hover {
+    transform: scale(1.2);
+    transition: transform 700ms;
+}
+
+.links {
+    display: flex;
+    margin-inline: .6rem;
+    margin-bottom: 2rem;
+}
+
+.links a {
+    background: #29292e;
+
+    padding: 1.4rem;
+    margin-inline: .8rem;
+    margin-bottom: 1rem;
+
+    border-radius: .5rem;
+    display: block;
+}
+
+.links a:hover,
+.project a:hover {
+    filter: brightness(1.2);
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1rem);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+
+    padding: 2rem;
+
+    width: 30rem;
+    height: 20rem;
+
+    position: relative;
+
+    transition: transform 700ms;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    transition: transform 700ms;
+}
+
+.project-title {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    position: absolute;
+    bottom: 2rem;
+}
