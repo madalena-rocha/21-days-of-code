@@ -37,6 +37,10 @@ h1 {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .emoji {
